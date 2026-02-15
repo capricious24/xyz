@@ -1,0 +1,11 @@
+{
+  "name": "ai-interview-platform",
+  "version": "1.0.0",
+  "description": "Web app that generates dynamic interview questions from resume skills and keywords.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

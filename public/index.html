@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Interview Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>AI Interview Platform</h1>
+      <p>Generate dynamic interview questions from a candidate resume (AI-first with safe fallback mode).</p>
+    </header>
+
+    <section class="panel">
+      <label for="role">Role</label>
+      <input id="role" type="text" placeholder="e.g. Senior Full-stack Engineer" />
+
+      <label for="skills">Target Skills (comma separated)</label>
+      <input id="skills" type="text" placeholder="React, Node.js, System Design" />
+
+      <label for="resume">Candidate Resume Text</label>
+      <textarea id="resume" rows="12" placeholder="Paste resume text here..."></textarea>
+
+      <button id="generateBtn">Generate Dynamic Questions</button>
+    </section>
+
+    <section class="panel hidden" id="resultPanel">
+      <h2>Interview Plan</h2>
+      <div id="meta"></div>
+
+      <h3>Scoring Rubric</h3>
+      <ul id="rubric"></ul>
+
+      <h3>Questions</h3>
+      <ol id="questions"></ol>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
